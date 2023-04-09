@@ -10,7 +10,7 @@ import java.io.IOException;
 import java.time.Duration;
 
 public class LoginTestRunner extends Setup {
-    @Test
+    @Test(priority = 1, description = "User can login successfully")
     public void doLogin() throws IOException, ParseException, InterruptedException {
         LoginPage loginPage=new LoginPage(driver);
         JSONObject userObj= Utils.readJSONList("./src/test/resources/users.json",0);
