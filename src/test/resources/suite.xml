@@ -1,0 +1,8 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Dmoney web automation">
+    <test name="Dmoney admin can login">
+        <classes>
+            <class name="LoginTestRunner"/>
+        </classes>
+    </test>
+</suite>
